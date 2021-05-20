@@ -3,7 +3,7 @@ def call(body) {
     def config = [:]
     config = body
     print(config)
-    def mvn_build = new src.org.utils.maven
+    def mvn_build = new src.org.utils.maven.maven_build()
     node {
         
         stage('Checkout') {
@@ -11,7 +11,7 @@ def call(body) {
         }
 
         stage('Build') {
-            mvn_build.maven_build()
+            mvn_build
         }
     }
 }
