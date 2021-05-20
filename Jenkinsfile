@@ -1,4 +1,4 @@
-Library_ ['jenkins-examples']
+Library ['jenkins-examples']
 {
   dummmy_var = '1'
 }
