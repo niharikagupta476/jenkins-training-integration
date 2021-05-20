@@ -3,7 +3,7 @@ def call(body) {
     def config = [:]
     config = body
     print('config')
-    print(config)
+    print(config.dummy_var)
     //def mvn_build = new src.org.utils.maven()
     node {
         
