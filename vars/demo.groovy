@@ -13,7 +13,7 @@ def call(body) {
     node {
         //def mvn_build = new src.org.utils.maven()
         stage('Checkout') {
-            scm checkout
+            checkout(scm)
             //git 'https://github.com/cloudogu/jenkinsfiles'
         }
 
