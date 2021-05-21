@@ -11,7 +11,7 @@ def call(body) {
     print("config")
     print(config)
     node {
-        def mvn_build = new src.org.utils.maven.maven_build()
+        def mvn_build = new src.org.utils.maven()
         stage('Checkout') {
             git 'https://github.com/cloudogu/jenkinsfiles'
         }
