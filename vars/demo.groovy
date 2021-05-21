@@ -1,7 +1,7 @@
 
-def call(body=[:]) {
+def call(body) {
     def config = [:]
-    config = body
+    config = body()
     print('config')
     print(config)
     //def mvn_build = new src.org.utils.maven()
