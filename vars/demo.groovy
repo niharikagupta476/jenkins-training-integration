@@ -6,7 +6,7 @@ def call(body = [:]) {
     def test_var = 'test_var_value'
     //def mvn_build = new src.org.utils.maven()
     print("body")
-    print(body)
+    print(body.get(dummy_var))
     print("config")
     print(config)
     node {
