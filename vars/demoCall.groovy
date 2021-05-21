@@ -2,5 +2,5 @@ def call(body) {
     def config = [:]
     config = body
     print('in demoCall')
-    print(config.testVar)
+    print(config.tes_var)
 }
