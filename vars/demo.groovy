@@ -1,4 +1,4 @@
-
+import src.org.utils
 def call(body) {
     def config = [:]
     body.resolveStrategy = Closure.DELEGATE_FIRST
