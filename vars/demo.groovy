@@ -6,7 +6,7 @@ def call(body) {
     body()
 
     def test_var = 'test_var_value'
-    //def mvn_build = new src.org.utils.maven()
+    def mvn_build = new src.org.utils.maven()
     print("body")
     print("${config.dummy_var}")
     print("config")
@@ -18,7 +18,7 @@ def call(body) {
         }
 
         stage('Build') {
-           //mvn_build.maven_build()
+           mvn_build.maven_build()
            print('Maven build')
            
            demoCall{
