@@ -1,7 +1,7 @@
 
 def call(body) {
     def config = [:]
-    config = body
+    config = body[:]
     print('config')
     print(config)
     def test_var = 'test_var_value'
