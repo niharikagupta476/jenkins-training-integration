@@ -1,4 +1,4 @@
-def call(body) {
+def call(body=[:]) {
     def config = [:]
     config = body
     print('in demoCall')
