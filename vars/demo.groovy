@@ -14,6 +14,10 @@ def call(body) {
         stage('Build') {
            //mvn_build.maven_build()
            print('Maven build')
+           def test_var = 'test_var_value'
+           demCall{
+               testVar = test_var
+           }
         }
     }
 }
