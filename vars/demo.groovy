@@ -1,9 +1,10 @@
 
 def call(body) {
     def config = [:]
-    config = body()
+    config = body
     print('config')
     print(config)
+    def test_var = 'test_var_value'
     //def mvn_build = new src.org.utils.maven()
     node {
         
@@ -14,9 +15,9 @@ def call(body) {
         stage('Build') {
            //mvn_build.maven_build()
            print('Maven build')
-           def test_var = 'test_var_value'
+           
            demoCall{
-               test_var = test_var
+               test_var = 'test_var_value'
            }
         }
     }
