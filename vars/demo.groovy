@@ -15,7 +15,7 @@ def call(body) {
            //mvn_build.maven_build()
            print('Maven build')
            def test_var = 'test_var_value'
-           demCall{
+           demoCall{
                testVar = test_var
            }
         }
