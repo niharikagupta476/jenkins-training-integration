@@ -1,7 +1,9 @@
 
-def call(body = [:]) {
+def call(body) {
     def config = [:]
-    config = body
+    body.resolveStrategy = Closure.DELEGATE_FIRST
+    body.delegate = config
+    body()
 
     def test_var = 'test_var_value'
     //def mvn_build = new src.org.utils.maven()
