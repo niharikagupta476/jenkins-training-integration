@@ -5,8 +5,10 @@ def call(body = [:]) {
 
     def test_var = 'test_var_value'
     //def mvn_build = new src.org.utils.maven()
-    print("body",body)
-    print("config",config)
+    print("body")
+    print(body)
+    print("config")
+    print(config)
     node {
         
         stage('Checkout') {
