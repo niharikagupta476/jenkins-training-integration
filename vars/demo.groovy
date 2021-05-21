@@ -1,4 +1,3 @@
-import src.org.utils
 def call(body) {
     def config = [:]
     body.resolveStrategy = Closure.DELEGATE_FIRST
@@ -6,13 +5,13 @@ def call(body) {
     body()
 
     def test_var = 'test_var_value'
-    def mvn_build = new src.org.utils.maven.maven_build()
+    //def mvn_build = new src.org.utils.maven.maven_build()
     print("body")
     print("${config.dummy_var}")
     print("config")
     print(config)
     node {
-        
+        def mvn_build = new src.org.utils.maven.maven_build()
         stage('Checkout') {
             git 'https://github.com/cloudogu/jenkinsfiles'
         }
