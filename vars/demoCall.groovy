@@ -1,6 +1,6 @@
 def call(body) {
     def config = [:]
-    config = body[:]
+    config = body
     print('in demoCall')
-    print(config.test_var)
+    print("${env.BUILD_ID}")
 }
